@@ -15,7 +15,7 @@
       <p class="card-name">著者: {book.authors[0].name}</p>
     </a>
   {/each}
-  {#if !data.articles.length}
+  {#if data.articles.length}
     <p>No Articles</p>
   {/if}
 </div>
