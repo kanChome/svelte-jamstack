@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { base } from "$app/paths";
   import Button from "../../../components/Button.svelte";
   export let data;
   $: title = data.articles.title;
@@ -14,7 +15,7 @@
 </svelte:head>
 
 <div class="single">
-  <div class="back-link"><a href="/">書籍一覧に戻る</a></div>
+  <div class="back-link"><a href="{base}">書籍一覧に戻る</a></div>
   <h1 class="title">{title}</h1>
   <p class="name">著者: {auther} <span class="number">{birth} - {dead}</span></p>
   <p class="text">カテゴリ</p>
