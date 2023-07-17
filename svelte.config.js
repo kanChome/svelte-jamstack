@@ -25,7 +25,7 @@ const config = {
 			assets: 'build',
 			fallback: null,
 			preprocess: false,
-			strict: false
+			strict: true
 		}),
 		paths: {
 			base: isDev ? '' : process.env.BASE_PATH,
