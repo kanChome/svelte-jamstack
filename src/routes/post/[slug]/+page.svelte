@@ -16,7 +16,7 @@
 <div class="single">
   <div class="back-link"><a href="/">書籍一覧に戻る</a></div>
   <h1 class="title">{title}</h1>
-  <p class="name">著者: {auther} <span class="number">{birth} = {dead}</span></p>
+  <p class="name">著者: {auther} <span class="number">{birth} - {dead}</span></p>
   <p class="text">カテゴリ</p>
   <ul class="list">
     {#each subjects as subject}
