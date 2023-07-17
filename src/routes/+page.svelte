@@ -1,4 +1,6 @@
 <script lang="ts">
+  import { base } from '$app/paths'
+
   export let data;
   let books = data.articles.results;
 </script>
@@ -10,7 +12,7 @@
 <h1 class="heading">Svelte + gutendex Articles</h1>
 <div class="card-container">
   {#each books as book}
-    <a href={`/post/${book.id}`} class="card-item">
+    <a href={`${base}/post/${book.id}/`} class="card-item">
       <h2 class="card-heading">{book.title}</h2>
       <p class="card-name">著者: {book.authors[0].name}</p>
     </a>

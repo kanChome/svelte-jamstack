@@ -1,13 +1,17 @@
+<script lang="ts">
+  import { base } from '$app/paths';
+</script>
+
 <div class="container">
   <header id="header">
     <h1>Sample Site</h1>
-    <a href="/clock/" class="link">clock</a>
+    <a href="{base}/clock/" class="link">clock</a>
   </header>
   <main id="main">
     <slot />
   </main>
   <footer id="footer">
-    <p> kanChome</p>
+    <p>kanChome</p>
   </footer>
 </div>
 
